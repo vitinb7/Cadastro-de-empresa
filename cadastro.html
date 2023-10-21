@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+    <style>
+    body {
+        font-family:Arial, Helvetica, sans-serif;
+        text-align: center;
+        background-color:rgb(209, 209, 209);
+    }
+    label {
+        display: block;
+        padding: 10px;
+        font-weight: bold;
+                
+    }
+    button{
+        margin-top: 15px;
+        border: none;
+        background-color: black;
+        width: 75px;
+        height: 30px;
+        color: white;
+    }
+    textarea{
+        resize: none;
+        width: 300px;
+        height: 100px;
+        
+    }
+    input{
+        width: 170px;
+        border: double;
+        
+    }
+    h1{
+        background-color:#23238E;
+        padding: 25px;
+        filter:opacity(90%);
+        color: white;
+        height: 40px;
+    }
+    </style>
+</head>
+
+<body>
+
+    <h1>Cadastro de Empresa</h1>
+    <form method="post" action="#">
+    <label for="CNPJ">CNPJ</label>
+    <input type="text" name="CNPJ" id="CNPJ" required>
+    
+    <label for="razao">Razâo Social</label>
+    <input type="text" name="razao" id="razao" required>
+   
+    <label for="nome">Nome Fantasia</label>
+    <input type="text" name="nome" id="nome" required>
+    
+    <label for="cep">CEP</label>
+    <input type="text" name="cep" id="cep" required>
+    
+    <label for="telefone">Telefone de Contato</label>
+    <input type="tel" name="telefone" id="telefone" required>
+    <br><br>
+    <label for="email">Email de Contato</label>
+    <input type="email" name="email" id="email" required>
+    
+    <label for="observação">Observação</label>
+    <textarea name="observação" id="observação"></textarea>
+    <br>
+    
+    </form>
+    <a href="cadastro2.html"><button>Cadastrar</button></a>
+     
+</body>
+</html>
